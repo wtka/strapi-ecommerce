@@ -1,20 +1,13 @@
-import HeroBanner from '@/components/HeroBanner';
 import ProductCard from '@/components/ProductCard';
 import Wrapper from '@/components/Wrapper';
 
-export default function Home() {
+const Category = () => {
   return (
-    <main>
-      <HeroBanner />
+    <div className="w-full md:py-20">
       <Wrapper>
-        <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-20">
+        <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-0">
           <div className="text-[28px] md:text-[34px] mb-5 font-semibold leading-tight">
-            Cushioning for your Miles
-          </div>
-          <div className="text-base md:text-xl">
-            A lightweight Nike ZoomX midsole is combined with increased stack
-            heights to help provide cushioning during extended stretches of
-            running.
+            Running Shoes
           </div>
         </div>
 
@@ -33,6 +26,8 @@ export default function Home() {
         </div>
         {/* products grid end */}
       </Wrapper>
-    </main>
+    </div>
   );
-}
+};
+
+export default Category;
